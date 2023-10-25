@@ -1,0 +1,52 @@
+# OOP
+
+## Задача №1
+
+Розробити клас Button з наступними параметрами:
+- text (str)
+- font-size (float, default=12.0)
+- border-width (int, default=1)
+- border-color (str, default="red")
+- border-type (str, default="solid")
+- bg-color (str, default="blue")
+  
+Добавити метод що дозволяє вивести інформацію про створений об'єкт наступним чином:
+```text
+ Button parameters:
+1. Text: {button.text}
+2. Font Size: {font.size}px
+3. Border: {border-width}px {border-color} {border-type}
+4. Background color: {bg-color}
+``` 
+
+## Задача №2
+Дано наступний код:
+```python
+class Base:
+    def __init__(self):
+        print(1)
+
+    def b(self):
+        print(2)
+
+
+class One(Base):
+    def __init__(self):
+        print(3)
+
+    def b(self):
+        print(4)
+
+
+class Demo:
+    def main(self):
+        One()
+```
+
+Модифікувати `__init__` класу One для того щоб отримати наступний результат виконання програми:
+```text
+1
+2
+4
+3
+```
